@@ -1,0 +1,78 @@
+--CREATE DATABASE Studio2_Systems_DB;
+
+USE Studio2_Systems_DB;
+
+CREATE TABLE PaymentCard (
+	CardNo CHAR(16) NOT NULL PRIMARY KEY,
+	CardType VARCHAR(10) NOT NULL,
+	CardName VARCHAR(50) NOT NULL,
+	ExpiryMonth INT NOT NULL,
+	ExpiryYear INT NOT NULL
+);
+
+CREATE TABLE MembershipType (
+	MembershipTypeID INT NOT NULL IDENTITY PRIMARY KEY,
+	MembershipName VARCHAR(40) NOT NULL,
+	MembershipLength INT NOT NULL,
+	MembershipMonthlyCost INT NOT NULL,
+	MembershipSingleCost FLOAT NOT NULL
+);
+
+CREATE TABLE Member (
+	MemberID INT NOT NULL IDENTITY PRIMARY KEY,
+	Title VARCHAR(3) NOT NULL,
+	Gender VARCHAR(6),
+	Surname VARCHAR(30) NOT NULL,
+	FirstName VARCHAR(30) NOT NULL,
+	DOB DATE NOT NULL,
+	Address1 VARCHAR(100) NOT NULL,
+	Address2 VARCHAR(100),
+	Town VARCHAR(100) NOT NULL,
+	County VARCHAR(100) NOT NULL,
+	Postcode VARCHAR(8) NOT NULL,
+	ContactHomeNo CHAR(11),
+	ContactMobileNo CHAR(11),
+	Email VARCHAR(100) NOT NULL,
+	CardNo CHAR(16),
+	MembershipTypeID INT NOT NULL,
+	FOREIGN KEY (MembershipTypeID) REFERENCES MembershipType (MembershipTypeID),
+	FOREIGN KEY (CardNo) REFERENCES PaymentCard (CardNo),
+);
+
+CREATE TABLE ClassType (
+	ClassID INT NOT NULL IDENTITY PRIMARY KEY,
+	ClassLevel VARCHAR(12) NOT NULL,
+	ClassType VARCHAR(10) NOT NULL,
+);
+
+CREATE TABLE Schedule (
+	SlotID INT NOT NULL IDENTITY PRIMARY KEY,
+	ClassID INT NOT NULL,
+	SlotDay VARCHAR(9),
+	SlotStartTime INT NOT NULL,
+	SlotLength INT NOT NULL,
+	FOREIGN KEY (ClassID) REFERENCES ClassType (ClassID),
+);
+
+CREATE TABLE Payment (
+	PaymentID INT NOT NULL IDENTITY PRIMARY KEY,
+	PaidAmount INT NOT NULL,
+	SinglePayment VARCHAR(3) NOT NULL,
+	DateOfPayment DATE NOT NULL,
+);
+
+CREATE TABLE Booking (
+	MemberID INT NOT NULL FOREIGN KEY (MemberID) REFERENCES Member (MemberID),
+	SlotID INT NOT NULL FOREIGN KEY (SlotID) REFERENCES Schedule (SlotID),
+	PaymentID INT NOT NULL FOREIGN KEY (PaymentID) REFERENCES Payment (PaymentID),
+	Attended VARCHAR(3) NOT NULL,
+	DateOfClass DATE NOT NULL,
+	Paid VARCHAR(3) NOT NULL
+);
+
+CREATE TABLE SignIn (
+	SignInID INT NOT NULL IDENTITY PRIMARY KEY,
+	MemberID INT NOT NULL REFERENCES Member (MemberID),
+	SignInDateTime TIME NOT NULL,
+	AccountedFor VARCHAR(3) NOT NULL
+);
