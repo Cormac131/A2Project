@@ -30,12 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewAllMembers));
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.studio2_Systems_DBDataSet = new Application_Test.Studio2_Systems_DBDataSet();
             this.memberBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.memberTableAdapter = new Application_Test.Studio2_Systems_DBDataSetTableAdapters.MemberTableAdapter();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studio2_Systems_DBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.memberBindingSource)).BeginInit();
@@ -65,23 +63,11 @@
             // 
             this.memberTableAdapter.ClearBeforeFill = true;
             // 
-            // reportViewer1
-            // 
-            reportDataSource2.Name = "Member";
-            reportDataSource2.Value = this.memberBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Application_Test.Reports.MemberReport.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(12, 180);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(698, 408);
-            this.reportViewer1.TabIndex = 18;
-            // 
             // ViewAllMembers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "ViewAllMembers";
             this.Size = new System.Drawing.Size(724, 604);
@@ -99,6 +85,5 @@
         private System.Windows.Forms.BindingSource memberBindingSource;
         private Studio2_Systems_DBDataSet studio2_Systems_DBDataSet;
         private Studio2_Systems_DBDataSetTableAdapters.MemberTableAdapter memberTableAdapter;
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
     }
 }

@@ -30,11 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ViewAllBookings));
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.bookingBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.studio2_Systems_DBDataSet2 = new Application_Test.Studio2_Systems_DBDataSet2();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.bookingTableAdapter = new Application_Test.Studio2_Systems_DBDataSet2TableAdapters.BookingTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.bookingBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studio2_Systems_DBDataSet2)).BeginInit();
@@ -61,17 +59,6 @@
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             // 
-            // reportViewer1
-            // 
-            reportDataSource1.Name = "DataSet1";
-            reportDataSource1.Value = this.bookingBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Application_Test.Reports.BookingReport.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(12, 181);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(698, 407);
-            this.reportViewer1.TabIndex = 16;
-            // 
             // bookingTableAdapter
             // 
             this.bookingTableAdapter.ClearBeforeFill = true;
@@ -81,7 +68,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "ViewAllBookings";
             this.Size = new System.Drawing.Size(724, 604);
@@ -96,7 +82,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private System.Windows.Forms.BindingSource bookingBindingSource;
         private Studio2_Systems_DBDataSet2 studio2_Systems_DBDataSet2;
         private Studio2_Systems_DBDataSet2TableAdapters.BookingTableAdapter bookingTableAdapter;

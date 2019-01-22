@@ -30,12 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PersonsOnSite));
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.signInBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.studio2_Systems_DBDataSet2 = new Application_Test.Studio2_Systems_DBDataSet2();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.signInTableAdapter = new Application_Test.Studio2_Systems_DBDataSet2TableAdapters.SignInTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.signInBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studio2_Systems_DBDataSet2)).BeginInit();
@@ -62,19 +59,6 @@
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             // 
-            // reportViewer1
-            // 
-            reportDataSource1.Name = "Member";
-            reportDataSource2.Name = "DataSet1";
-            reportDataSource2.Value = this.signInBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Application_Test.Reports.PersonsOnSite.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(12, 181);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(698, 413);
-            this.reportViewer1.TabIndex = 16;
-            // 
             // signInTableAdapter
             // 
             this.signInTableAdapter.ClearBeforeFill = true;
@@ -84,7 +68,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "PersonsOnSite";
             this.Size = new System.Drawing.Size(724, 604);
@@ -99,7 +82,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private System.Windows.Forms.BindingSource signInBindingSource;
         private Studio2_Systems_DBDataSet2 studio2_Systems_DBDataSet2;
         private Studio2_Systems_DBDataSet2TableAdapters.SignInTableAdapter signInTableAdapter;

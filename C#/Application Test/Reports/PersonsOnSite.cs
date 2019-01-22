@@ -22,8 +22,6 @@ namespace Application_Test.Reports
         {
             // TODO: This line of code loads data into the 'studio2_Systems_DBDataSet.Member' table. You can move, or remove it, as needed.
             this.signInTableAdapter.Fill(this.studio2_Systems_DBDataSet2.SignIn);
-
-            this.reportViewer1.RefreshReport();
         }
     }
 }

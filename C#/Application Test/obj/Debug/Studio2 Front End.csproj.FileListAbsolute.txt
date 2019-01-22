@@ -169,3 +169,30 @@ E:\Studio2 System\C#\Application Test\obj\Debug\RdlCompile.cache
 E:\Studio2 System\C#\Application Test\obj\Debug\RdlCompile.compiled
 D:\Studio2 System\C#\Application Test\bin\Debug\User Guide.pdf
 E:\Studio2 System\C#\Application Test\bin\Debug\User Guide.pdf
+C:\Users\c.mcgrath.STATSports\Documents\GitHub\A2Project\C#\Application Test\obj\Debug\Studio2 Front End.csprojAssemblyReference.cache
+C:\Users\c.mcgrath.STATSports\Documents\GitHub\A2Project\C#\Application Test\obj\Debug\Application_Test.BookingControls.Schedule.resources
+C:\Users\c.mcgrath.STATSports\Documents\GitHub\A2Project\C#\Application Test\obj\Debug\Application_Test.BookingControls.BookingAClass.resources
+C:\Users\c.mcgrath.STATSports\Documents\GitHub\A2Project\C#\Application Test\obj\Debug\Application_Test.ExtraForms.FrmFindMember.resources
+C:\Users\c.mcgrath.STATSports\Documents\GitHub\A2Project\C#\Application Test\obj\Debug\Application_Test.Dashboard.resources
+C:\Users\c.mcgrath.STATSports\Documents\GitHub\A2Project\C#\Application Test\obj\Debug\Application_Test.Login.resources
+C:\Users\c.mcgrath.STATSports\Documents\GitHub\A2Project\C#\Application Test\obj\Debug\Application_Test.FrmMain.resources
+C:\Users\c.mcgrath.STATSports\Documents\GitHub\A2Project\C#\Application Test\obj\Debug\Application_Test.MainControls.Payment.resources
+C:\Users\c.mcgrath.STATSports\Documents\GitHub\A2Project\C#\Application Test\obj\Debug\Application_Test.MainControls.Settings.resources
+C:\Users\c.mcgrath.STATSports\Documents\GitHub\A2Project\C#\Application Test\obj\Debug\Application_Test.FindMember.resources
+C:\Users\c.mcgrath.STATSports\Documents\GitHub\A2Project\C#\Application Test\obj\Debug\Application_Test.MemberControls.FrmLoadMemberDetails.resources
+C:\Users\c.mcgrath.STATSports\Documents\GitHub\A2Project\C#\Application Test\obj\Debug\Application_Test.NewMember.resources
+C:\Users\c.mcgrath.STATSports\Documents\GitHub\A2Project\C#\Application Test\obj\Debug\Application_Test.Properties.Resources.resources
+C:\Users\c.mcgrath.STATSports\Documents\GitHub\A2Project\C#\Application Test\obj\Debug\Application_Test.FrmSplashScreen.resources
+C:\Users\c.mcgrath.STATSports\Documents\GitHub\A2Project\C#\Application Test\obj\Debug\Application_Test.Reports.ViewAllBookings.resources
+C:\Users\c.mcgrath.STATSports\Documents\GitHub\A2Project\C#\Application Test\obj\Debug\Application_Test.Reports.PersonsOnSite.resources
+C:\Users\c.mcgrath.STATSports\Documents\GitHub\A2Project\C#\Application Test\obj\Debug\Application_Test.Reports.ViewAllMembers.resources
+C:\Users\c.mcgrath.STATSports\Documents\GitHub\A2Project\C#\Application Test\obj\Debug\Application_Test.SignInOut.SignIn.resources
+C:\Users\c.mcgrath.STATSports\Documents\GitHub\A2Project\C#\Application Test\obj\Debug\Application_Test.SignInOut.SignOut.resources
+C:\Users\c.mcgrath.STATSports\Documents\GitHub\A2Project\C#\Application Test\obj\Debug\Studio2 Front End.csproj.GenerateResource.cache
+C:\Users\c.mcgrath.STATSports\Documents\GitHub\A2Project\C#\Application Test\obj\Debug\Studio2 Front End.csproj.CoreCompileInputs.cache
+C:\Users\c.mcgrath.STATSports\Documents\GitHub\A2Project\C#\Application Test\obj\Debug\Application Test.exe
+C:\Users\c.mcgrath.STATSports\Documents\GitHub\A2Project\C#\Application Test\obj\Debug\Application Test.pdb
+C:\Users\c.mcgrath.STATSports\Documents\GitHub\A2Project\C#\Application Test\bin\Debug\User Guide.pdf
+C:\Users\c.mcgrath.STATSports\Documents\GitHub\A2Project\C#\Application Test\bin\Debug\Application Test.exe.config
+C:\Users\c.mcgrath.STATSports\Documents\GitHub\A2Project\C#\Application Test\bin\Debug\Application Test.exe
+C:\Users\c.mcgrath.STATSports\Documents\GitHub\A2Project\C#\Application Test\bin\Debug\Application Test.pdb

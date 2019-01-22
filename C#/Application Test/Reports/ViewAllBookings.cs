@@ -21,8 +21,6 @@ namespace Application_Test.Reports
         {
             // TODO: This line of code loads data into the 'studio2_Systems_DBDataSet2.Booking' table. You can move, or remove it, as needed.
             this.bookingTableAdapter.Fill(this.studio2_Systems_DBDataSet2.Booking);
-
-            this.reportViewer1.RefreshReport();
         }
     }
 }
